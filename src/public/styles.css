@@ -1,0 +1,88 @@
+/* Styling for the login page */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333;
+  text-align: center;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.login-container button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.error-message::before {
+  content: "⚠ ";
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .login-container h1 {
+    font-size: 20px;
+  }
+
+  .login-container button {
+    font-size: 14px;
+  }
+}
